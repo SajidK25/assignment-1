@@ -4,6 +4,7 @@ function findMinAbsoluteValue($input){
   $arr=explode(' ',$input);
   $absCallback= fn (int $num)=>abs($num);
   $newArr= array_map($absCallback,$arr);
+  // var_dump($newArr);
   $minValue=min($newArr);
   return $minValue;
 }
